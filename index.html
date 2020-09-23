@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ethan Philpott">
+        <meta name="description" content="The basic website layout">
+        <meta property="og:image" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <title>Basic Website Layout</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+    </head>
+
+    <body>
+        <form action="pizza.json" method="POST">
+            <fieldset>
+                <legend>User Information</legend>
+                <ul>
+                    <li>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="user.username">
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="user.password">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>What Drink You Want?</legend>
+                <ul>
+                    <li>
+                        <label for="coke"><input type="radio" name="user.drink" id="coke">Coke</label>
+                    </li>
+                    <li>
+                        <label for="dietCoke"><input type="radio" name="user.drink" id="dietCoke">Diet Coke</label>
+                    </li>
+                    <li>
+                        <label for="sprite"><input type="radio" name="user.drink" id="sprite">Sprite</label>
+                    </li>
+                    <li>
+                        <label for="water"><input type="radio" name="user.drink" id="water">Water</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Pizza Prefrence</legend>
+                <ul>
+                    <li>
+                        <label for="plain"><input type="checkbox" name="user.pp" id="plain">Plain</label>
+                    </li>
+                    <li>
+                        <label for="pepperone"><input type="checkbox" name="user.pp" id="pepperone">Pepperone</label>
+                    </li>
+                    <li>
+                        <label for="chicken"><input type="checkbox" name="user.pp" id="chicken">Chicken</label>
+                    </li>
+                    <li>
+                        <label for="sausage"><input type="checkbox" name="user.pp" id="sausage">Sasage</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <ul>
+                    <li><label for="specialInstuctions">Special Instuctions</label><br> <textarea name="user.specinstruct" id="specialInstuctions" cols="30" rows="10"></textarea></li>
+                </ul>
+                <p>
+                    <button type="submit" >Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
